@@ -1,0 +1,46 @@
+{
+  "seed": 42,
+  "test_size": 0.2,
+  "test_rows": 716,
+  "selected_model": "Random Forest Regressor",
+  "selection_metric": "rmse",
+  "selection_rule": "Lowest held-out RMSE; MAE and R\u00b2 are reported alongside it.",
+  "selected_metrics": {
+    "model": "Random Forest Regressor",
+    "mae": 174376.77832094938,
+    "rmse": 404336.2641310459,
+    "r2": 0.4924840529286776
+  },
+  "cross_validation": {
+    "mae_mean": 175588.0319490451,
+    "mae_std": 5655.35107725608,
+    "rmse_mean": 357824.2193083272,
+    "r2_mean": 0.4704533394711105
+  },
+  "comparisons": [
+    {
+      "model": "Random Forest Regressor",
+      "mae": 174376.77832094938,
+      "rmse": 404336.2641310459,
+      "r2": 0.4924840529286776
+    },
+    {
+      "model": "Gradient Boosting Regressor",
+      "mae": 165709.6932002267,
+      "rmse": 421514.71385756455,
+      "r2": 0.4484437841739256
+    },
+    {
+      "model": "Ridge Regression",
+      "mae": 191657.61789059415,
+      "rmse": 424380.39175612247,
+      "r2": 0.4409187549436213
+    },
+    {
+      "model": "Dummy Regressor",
+      "mae": 283304.74860335194,
+      "rmse": 582844.1411646473,
+      "r2": -0.05455485483351552
+    }
+  ]
+}

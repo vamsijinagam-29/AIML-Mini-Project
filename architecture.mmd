@@ -1,0 +1,8 @@
+flowchart LR
+  A[Uploaded Car Dekho CSV] --> B[train.py\nclean + validate]
+  B --> C[Train/test split\npreprocessing pipeline]
+  C --> D[Model comparison\nDummy / Ridge / RF / GB]
+  D --> E[artifacts/model.joblib\nmetrics.json + metadata.json]
+  E --> F[FastAPI\n/health /metadata /predict]
+  F --> G[React dashboard\nform + INR estimate]
+  G --> H[Browser localStorage\nprediction history]
